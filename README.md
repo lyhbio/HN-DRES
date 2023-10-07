@@ -1,4 +1,4 @@
-# DrugREP: a repository for evaluating drug repositioning methods
+# DrugREP: a repository for evaluating drug repositioning methods based on heterogeneous networks
 ![Overview of DR evaluation](./figures/overflow_v16.png )
 
 Detailed evaluation results and web prediction tools are available at: [http://drugreposition.goodluckcome.com](http://drugreposition.goodluckcome.com).
