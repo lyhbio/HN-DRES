@@ -1,5 +1,5 @@
 # DrugREP
-a repository for evaluating drug repositioning methods
+A repository for evaluating drug repositioning methods
 ## How to use
 We use two methods HGIMC and BNNR as examples. 
 
