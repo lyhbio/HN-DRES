@@ -8,7 +8,7 @@ Matlab 2020a
 ## Installation
 Download by
 ~~~~
-git clone https://github.com/yyq83/DR-method-evaluation.git
+git clone https://github.com/lyhbio/DrugREP.git
 ~~~~
 and install dependencies by
 ~~~~~
