@@ -1,5 +1,5 @@
-# DR-method-evaluation
-drug repositioning method evaluation
+# DrugREP
+a repository for evaluating drug repositioning methods
 ## How to use
 We use two methods HGIMC and BNNR as examples. 
 
