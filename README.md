@@ -8,7 +8,7 @@ Matlab 2020a
 ## Installation
 Download by
 ~~~~
-git clone https://github.com/lyhbio/DrugREP.git
+git clone https://github.com/lyhbio/HN-DREP.git
 ~~~~
 and install dependencies by
 ~~~~~
