@@ -1,4 +1,4 @@
-# DrugREP
+# HN-DREP
 A repository for evaluating drug repositioning methods based on heterogeneous networks
 ## How to use
 We use two methods HGIMC and BNNR as examples. 
