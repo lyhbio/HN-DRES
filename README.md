@@ -1,4 +1,4 @@
-# HNDRES: a repository for heterogeneous network-based drug repositioning method evaluation snakemake workflow.
+# HN-DRES: a repository for heterogeneous network-based drug repositioning method evaluation snakemake workflow.
 ![Overview of DR evaluation](./figures/overflow_v16.png )
 
 Detailed evaluation results and web prediction tools are available at: [http://hn-drep.lyhbio.com](http://hn-drep.lyhbio.com).
@@ -8,7 +8,7 @@ Matlab 2020a
 ## Installation
 Download by
 ~~~~
-git clone https://github.com/lyhbio/HNDRES.git
+git clone https://github.com/lyhbio/HN-DRES.git
 ~~~~
 and install dependencies by
 ~~~~~
