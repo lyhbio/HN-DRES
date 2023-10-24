@@ -1,5 +1,5 @@
-# HNDRES
-HNDRES: a repository for heterogeneous network-based drug repositioning method evaluation snakemake workflow
+# HN-DRES
+HN-DRES: a repository for heterogeneous network-based drug repositioning method evaluation snakemake workflow
 ## How to use
 We use two methods HGIMC and BNNR as examples. 
 
