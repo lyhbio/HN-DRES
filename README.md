@@ -191,7 +191,7 @@ The following datasets were used in our study：
 
 ## Adding new methods (bring your own method to the benchmark)
 If you wish to incorporate a new method into the process, simply follow these steps:  
-1. Place the method folder in the current directory.
+1. Place the method folder in the `Snakemake` directory.
 2. Store the corresponding dataset in the Datasets folder.
 3. Utilize `method_pre.m` and `crossval_method.m` as templates to adapt the `1. import data code` and `2. algorithmic code` sections according to your specific requirements, replacing them as needed.
 
