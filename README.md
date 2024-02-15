@@ -189,7 +189,55 @@ Users can add the command line parameter `--use-conda`, and snakemake will autom
 The following datasets were used in our study：
 `Fdataset`, `Cdataset`, `Ydataset`, `DNdataset`, `HDVD`, `LAGCN`, `LRSSL`, `SCMFDD_L`, `deepDR`, `iDrug`, `TLHGBI`, which is available at: [https://zenodo.org/record/8357512](https://zenodo.org/record/8357512).
 
+## Adding new methods (bring your own method to the benchmark)
+If you wish to incorporate a new method into the process, simply follow these steps:  
+1. Place the method folder in the current directory.
+2. Store the corresponding dataset in the Datasets folder.
+3. Utilize `method_pre.m` and `crossval_method.m` as templates to adapt the `1. import data code` and `2. algorithmic code` sections according to your specific requirements, replacing them as needed.
 
+If the method has already been crossvalidated, you just need to place the csv file results under the corresponding folder of the method, convert it to the final_CV_folds.csv file using the `originate-pre_2_final.py` script, and then run the Snakefile's evaluate rule.
+  
+If your method is not written in matlab, you should replace the `< >` placeholders in the Snakefile's `run_method_prerule` and `generate_CV_folds` rule shell with your own run script and make the necessary adjustments to your code accordingly. The `evaluate` rule  do not need to be modified.
+~~~~
+rule run_method_pre:
+    input:
+        "{method}/Datasets/{dataset}.mat"
+    output:
+        "{outdir}/{method}_{dataset}.csv"
+    conda:
+        "environment.yaml"
+    log:
+        "{outdir}/log/benchmark_{method}_{dataset}.log"
+    benchmark:
+        "{outdir}/Benchmark/benchmark_{method}_{dataset}.txt"
+    shell:
+        """
+        # Run and record execution time and memory usage to the log file.
+        (cd {wildcards.method} &&
+        /usr/bin/time -f "\nExecution Time: %E\nPeak Memory Usage: %M KB" <your run script> 2>&1 | tee {log}  ## modify the script and adjust your code appropriately
+        """
+
+rule generate_CV_folds:
+    input:
+        "{outdir}/{method}_{dataset}.csv",
+        "{method}/Datasets/{dataset}.mat"
+    output:
+        "{outdir}/{method}/{dataset}/final_CV_folds.csv"
+    conda:
+        "environment.yaml"
+    log:
+        "{outdir}/log/CV_{method}_{dataset}.log"
+    benchmark:
+        "{outdir}/Benchmark/CV_{method}_{dataset}.txt"
+    shell:
+        """
+        # Run script and generate cross-validation fold data.
+        (cd {wildcards.method} &&   
+        <your script> &&      ## modify the script and adjust your code appropriately
+        cd .. &&
+        python origin-pre_2_final.py --file_path="{wildcards.outdir}/{wildcards.method}/{wildcards.dataset}" )  2>&1 | tee {log}
+        """
+~~~~
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
