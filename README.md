@@ -15,7 +15,7 @@ and install dependencies by
 conda env create -f environment.yaml
 ~~~~~
 
-## File tree
+## File Structure Tree for the Project
 Click the 'file tree' button to expand or collapse the file tree, presenting a hierarchical view of the directory's files and folders, facilitating easy content navigation.
 <details>
   <summary>file tree</summary>
