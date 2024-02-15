@@ -24,13 +24,13 @@ Click the 'file tree' button to expand or collapse the file tree, presenting a h
 HN-DRES-main
 ├── environment.yaml
 ├── figures
-│   ├── auc_aupr_f1_3.png
-│   ├── overall_6.png
+│   ├── auc_aupr_f1_1.png
+│   ├── overall_1.png
 │   ├── overflow-final-v2.drawio.png
 │   ├── README.md
-│   ├── Scalability_usability_human_v3.png
-│   ├── Scalability_v1.png
-│   └── Usability_v1.png
+│   ├── Scalability_usability_human_1.png
+│   ├── Scalability.png
+│   └── Usability.png
 ├── LICENSE
 ├── README.md
 ├── Snakefile
