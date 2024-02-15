@@ -16,6 +16,7 @@ conda env create -f environment.yaml
 ~~~~~
 
 ## File tree
+Click the "tree file" button to expand and collapse the file tree.
 <details>
   <summary>tree file</summary>
 
