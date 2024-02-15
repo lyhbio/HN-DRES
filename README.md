@@ -3,7 +3,10 @@
 
 Detailed evaluation results and web prediction tools are available at: [http://hn-drep.lyhbio.com](http://hn-drep.lyhbio.com).
 ## Requirements
-Matlab 2020a
+Python=3.6
+scikit-learn=0.24.2
+snakemake=6.15.5
+Matlab 2020a  
 
 ## Installation
 Download by
