@@ -15,6 +15,147 @@ and install dependencies by
 conda env create -f environment.yaml
 ~~~~~
 
+## File tree
+<details>
+  <summary>tree file</summary>
+
+```plaintext
+HN-DRES-main
+├── environment.yaml
+├── figures
+│   ├── auc_aupr_f1_3.png
+│   ├── overall_6.png
+│   ├── overflow-final-v2.drawio.png
+│   ├── README.md
+│   ├── Scalability_usability_human_v3.png
+│   ├── Scalability_v1.png
+│   └── Usability_v1.png
+├── LICENSE
+├── README.md
+├── Snakefile
+└── Snakemake
+    ├── auc.py
+    ├── aupr.py
+    ├── BNNR
+    │   ├── BNNR.m
+    │   ├── crossval_method.m
+    │   ├── Datasets
+    │   │   ├── Cdataset.mat
+    │   │   ├── deepDR.mat
+    │   │   ├── DNdataset.mat
+    │   │   ├── Fdataset.mat
+    │   │   ├── HDVD.mat
+    │   │   ├── LAGCN.mat
+    │   │   ├── LRSSL.mat
+    │   │   ├── SCMFDD_L.mat
+    │   │   └── Ydataset.mat
+    │   ├── Demo.m
+    │   ├── method_pre.m
+    │   ├── README.md
+    │   ├── svt.m
+    │   └── train_test_split.m
+    ├── dag_evaluate.png
+    ├── dag_pre.png
+    ├── environment.yaml
+    ├── Evaluation
+    │   ├── Benchmark
+    │   │   ├── benchmark_BNNR_Fdataset.txt
+    │   │   ├── benchmark_HGIMC_Fdataset.txt
+    │   │   ├── CV_BNNR_Fdataset.txt
+    │   │   ├── CV_HGIMC_Fdataset.txt
+    │   │   ├── evaluate_BNNR_Fdataset.txt
+    │   │   └── evaluate_HGIMC_Fdataset.txt
+    │   ├── BNNR
+    │   │   └── Fdataset
+    │   │       ├── final_CV_folds.csv
+    │   │       ├── origin10.csv
+    │   │       ├── origin1.csv
+    │   │       ├── origin2.csv
+    │   │       ├── origin3.csv
+    │   │       ├── origin4.csv
+    │   │       ├── origin5.csv
+    │   │       ├── origin6.csv
+    │   │       ├── origin7.csv
+    │   │       ├── origin8.csv
+    │   │       ├── origin9.csv
+    │   │       ├── Plot
+    │   │       │   ├── BNNR_Fdataset_auc.png
+    │   │       │   ├── BNNR_Fdataset_aupr.png
+    │   │       │   ├── BNNR_Fdataset_mean_auc.png
+    │   │       │   └── BNNR_Fdataset_mean_aupr.png
+    │   │       ├── pre10.csv
+    │   │       ├── pre1.csv
+    │   │       ├── pre2.csv
+    │   │       ├── pre3.csv
+    │   │       ├── pre4.csv
+    │   │       ├── pre5.csv
+    │   │       ├── pre6.csv
+    │   │       ├── pre7.csv
+    │   │       ├── pre8.csv
+    │   │       └── pre9.csv
+    │   ├── BNNR_Fdataset.csv
+    │   ├── HGIMC
+    │   │   └── Fdataset
+    │   │       ├── final_CV_folds.csv
+    │   │       ├── origin10.csv
+    │   │       ├── origin1.csv
+    │   │       ├── origin2.csv
+    │   │       ├── origin3.csv
+    │   │       ├── origin4.csv
+    │   │       ├── origin5.csv
+    │   │       ├── origin6.csv
+    │   │       ├── origin7.csv
+    │   │       ├── origin8.csv
+    │   │       ├── origin9.csv
+    │   │       ├── Plot
+    │   │       │   ├── HGIMC_Fdataset_auc.png
+    │   │       │   ├── HGIMC_Fdataset_aupr.png
+    │   │       │   ├── HGIMC_Fdataset_mean_auc.png
+    │   │       │   └── HGIMC_Fdataset_mean_aupr.png
+    │   │       ├── pre10.csv
+    │   │       ├── pre1.csv
+    │   │       ├── pre2.csv
+    │   │       ├── pre3.csv
+    │   │       ├── pre4.csv
+    │   │       ├── pre5.csv
+    │   │       ├── pre6.csv
+    │   │       ├── pre7.csv
+    │   │       ├── pre8.csv
+    │   │       └── pre9.csv
+    │   ├── HGIMC_Fdataset.csv
+    │   └── log
+    │       ├── benchmark_BNNR_Fdataset.log
+    │       ├── benchmark_HGIMC_Fdataset.log
+    │       ├── CV_BNNR_Fdataset.log
+    │       ├── CV_HGIMC_Fdataset.log
+    │       ├── evaluate_BNNR_Fdataset.log
+    │       └── evaluate_HGIMC_Fdataset.log
+    ├── F1.py
+    ├── HGIMC
+    │   ├── crossval_method.m
+    │   ├── Datasets
+    │   │   ├── Cdataset.mat
+    │   │   ├── Datasets description.txt
+    │   │   ├── Fdataset.mat
+    │   │   └── Ydataset.mat
+    │   ├── Demo_HGIMC.m
+    │   ├── Functions
+    │   │   ├── fBMC.m
+    │   │   ├── fGRB.m
+    │   │   ├── fHGI.m
+    │   │   ├── fNorm.m
+    │   │   └── svt.m
+    │   ├── HGIMC_pre.m
+    │   ├── HGIMC_V1.m
+    │   ├── method_pre.m
+    │   ├── README.md
+    │   └── train_test_split.m
+    ├── origin-pre_2_final.py
+    ├── README.md
+    └── Snakefile
+
+16 directories, 116 files
+```
 ## Usage
 Go to the Snakemake folder
 ~~~~
