@@ -37,7 +37,7 @@ The following datasets were used in our study：
 
 
 
-## Adding new methods
+## Adding new methods(bring your own method to the benchmark)
 If you wish to incorporate a new method into the process, simply follow these steps:  
 1. Place the method folder in the current directory.
 2. Store the corresponding dataset in the Datasets folder.
