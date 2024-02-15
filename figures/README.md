@@ -1,9 +1,9 @@
 # Display of results of DR method evaluation
 ## Overall of evaluation
-![overall of DR evaluation](./overall_6.png)
+![overall of DR evaluation](./overall_1.png)
 ## The method performance 
-![performance of DR evaluation](./auc_aupr_f1_3.png)
+![performance of DR evaluation](./auc_aupr_f1_1.png)
 ## Scalability
 ![scalability of DR evaluation](./Scalability_v1.png)
 ## Usability
-![usability of DR evaluation](./Usability_v1.png)
+![usability of DR evaluation](./Usability.png)
