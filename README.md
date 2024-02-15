@@ -16,9 +16,9 @@ conda env create -f environment.yaml
 ~~~~~
 
 ## File tree
-Click the "tree file" button to expand and collapse the file tree.
+Click the 'file tree' button to expand or collapse the file tree, presenting a hierarchical view of the directory's files and folders, facilitating easy content navigation.
 <details>
-  <summary>tree file</summary>
+  <summary>file tree</summary>
 
 ```plaintext
 HN-DRES-main
