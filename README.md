@@ -17,7 +17,7 @@ conda env create -f environment.yaml
 
 ## File tree
 <details>
-  <summary>tree file
+  <summary>tree file</summary>
 
 ```plaintext
 HN-DRES-main
@@ -155,7 +155,8 @@ HN-DRES-main
     └── Snakefile
 
 16 directories, 116 files
-```  </summary>
+```
+</details>  
 ## Usage
 Go to the Snakemake folder
 ~~~~
