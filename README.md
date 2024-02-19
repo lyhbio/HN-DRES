@@ -2,7 +2,7 @@
 ![Overview of DR evaluation](./figures/overflow-final-v2.drawio.png)
 
 - Detailed evaluation results and web prediction tools (HN-DREP) are available at: [http://hn-drep.lyhbio.com](http://hn-drep.lyhbio.com).  
-- The source code of this web app can be found at [https://github.com/lyhbio/HN-DREP/tree/master](https://github.com/lyhbio/HN-DREP/tree/master).
+- The source code of HN-DREP web app can be found at [https://github.com/lyhbio/HN-DREP/tree/master](https://github.com/lyhbio/HN-DREP/tree/master).
 ## Requirements
 - Python=3.6
 - scikit-learn=0.24.2
