@@ -1,6 +1,6 @@
 # HN-DRES: a repository for heterogeneous network-based drug repositioning method evaluation snakemake workflow.
 ![Overview of DR evaluation](./figures/overflow-final-v2.drawio.png)
-## Web APP
+
 - Detailed evaluation results and web prediction tools (HN-DREP) are available at: [http://hn-drep.lyhbio.com](http://hn-drep.lyhbio.com).  
 - The source code of this web app can be found at [https://github.com/lyhbio/HN-DREP/tree/master](https://github.com/lyhbio/HN-DREP/tree/master).
 ## Requirements
